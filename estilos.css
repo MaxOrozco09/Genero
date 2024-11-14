@@ -90,6 +90,19 @@ body {
     position: relative;
 }
 
+/* Encabezado de la página de noticias */
+.header-noticias {
+    background-image: url('imagenes/banner_noticias.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4em 2em;
+    position: relative;
+}
+
+
 /* Capa semitransparente para mejorar la legibilidad del texto en todos los headers */
 .header-inicio::before,
 .header-ofertas::before,
@@ -98,6 +111,7 @@ body {
 .header-interes::before,
 .header-derechos::before,
 .header-servicios::before,
+.header-noticias::before,
 .header-consejos::before {
     content: "";
     position: absolute;
@@ -421,18 +435,90 @@ form {
     }
 }
 
-/* Ajustes específicos para la lista de "¿Qué buscamos?" en pantallas móviles */
+/* Sección de Noticias */
+.news-section {
+    margin-top: 40px;
+}
+
+.news-section h2 {
+    color: #800080; /* Tono de morado */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-section p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilo para cada noticia */
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.news-image {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.news-content h3 {
+    color: #800080; /* Tono de morado */
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+.news-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.btn-read-more {
+    background-color: #800080;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-read-more:hover {
+    background-color: #b266ff; /* Morado claro */
+}
+
+/* Responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
-    .section ul.goals-list {
-        padding-left: 20px; /* Asegura espacio a la izquierda para los bullets */
-        margin: 0;
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    /* Ajustes en los elementos de la lista para espacio y legibilidad */
-    .section ul.goals-list li {
-        font-size: 1em; /* Tamaño adecuado de fuente */
-        line-height: 1.6; /* Espacio entre líneas */
-        margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    .news-image {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .news-content h3 {
+        font-size: 1.2em;
+    }
+
+    .news-content p {
+        font-size: 0.95em;
     }
 }
 
