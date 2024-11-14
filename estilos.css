@@ -323,3 +323,100 @@ form {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra para un aspecto profesional */
 }
+
+/* Responsive: Ajustes específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajuste del encabezado para dispositivos móviles */
+    .header-inicio, .header-ofertas, .header-registro, .header-contacto, .header-interes, .header-derechos, .header-servicios, .header-consejos {
+        padding: 2em 1em; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    /* Ajuste de los títulos de encabezado */
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    /* Ajuste del tamaño de las imágenes principales */
+    .main-image img, .section-image, .service-icon {
+        width: 100%; /* Ocupa el ancho completo */
+        max-width: 100%;
+    }
+
+    /* Navegación responsive en dispositivos móviles */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 10px; /* Reduce el tamaño de los enlaces */
+        font-size: 0.9em; /* Disminuye el tamaño del texto */
+    }
+
+    /* Ajuste de la disposición de ofertas de trabajo */
+    .job-offers {
+        grid-template-columns: 1fr;
+    }
+
+    /* Estilo para el contenedor de sección */
+    .section {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    /* Ajustes de texto en las secciones de contenido */
+    .section h2 {
+        font-size: 1.6em;
+    }
+
+    .section h3 {
+        font-size: 1.2em;
+    }
+
+    .section p, .service p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    /* Centrado y tamaño de botones */
+    .btn-submit, .btn-contact {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+}
+
+/* Responsive para tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-inicio, .header-ofertas, .header-registro, .header-contacto, .header-interes, .header-derechos, .header-servicios, .header-consejos {
+        padding: 3em 1em;
+        min-height: 250px;
+    }
+
+    /* Ajuste en el tamaño de los iconos de servicios */
+    .service-icon {
+        width: 250px;
+    }
+
+    /* Ajuste en el texto de la sección */
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .section h3 {
+        font-size: 1.3em;
+    }
+
+    /* Ajuste de la disposición de ofertas de trabajo en 2 columnas */
+    .job-offers {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    /* Ajustes en la navegación */
+    nav a {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
