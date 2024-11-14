@@ -420,3 +420,19 @@ form {
         font-size: 1em;
     }
 }
+
+/* Ajustes específicos para la lista de "¿Qué buscamos?" en pantallas móviles */
+@media (max-width: 768px) {
+    .section ul.goals-list {
+        padding-left: 20px; /* Asegura espacio a la izquierda para los bullets */
+        margin: 0;
+    }
+
+    /* Ajustes en los elementos de la lista para espacio y legibilidad */
+    .section ul.goals-list li {
+        font-size: 1em; /* Tamaño adecuado de fuente */
+        line-height: 1.6; /* Espacio entre líneas */
+        margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    }
+}
+
