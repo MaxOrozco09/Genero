@@ -24,44 +24,90 @@
     <a href="contacto.html">Contacto</a>
 </nav>
 
-<section class="section cursos-section">
+<section class="section">
     <h2>Capacítate y Crece Profesionalmente</h2>
     <p>En esta sección te ofrecemos una variedad de cursos y capacitaciones diseñadas para madres autónomas, orientados a mejorar sus habilidades profesionales y abrir nuevas oportunidades de empleo.</p>
+</section>
 
-    <!-- Curso 1 -->
-    <div class="curso-item">
+<!-- Contenedor para los cursos -->
+<div class="courses-container">
+    <section class="section curso-item">
         <img src="imagenes/curso1.webp" alt="Imagen de curso 1" class="curso-image">
         <div class="curso-content">
             <h3>Curso de Habilidades Digitales</h3>
             <p>Aprende las habilidades digitales esenciales para el mercado laboral actual, incluyendo el uso de herramientas tecnológicas, redes sociales y comunicación digital.</p>
             <a href="#" class="btn-learn-more">Más información</a>
         </div>
-    </div>
+    </section>
 
-    <!-- Curso 2 -->
-    <div class="curso-item">
+    <section class="section curso-item">
         <img src="imagenes/curso2.webp" alt="Imagen de curso 2" class="curso-image">
         <div class="curso-content">
             <h3>Capacitación en Finanzas Personales</h3>
             <p>Este curso te ayudará a gestionar tus finanzas, crear presupuestos, y optimizar tus recursos para un futuro financiero seguro.</p>
             <a href="#" class="btn-learn-more">Más información</a>
         </div>
-    </div>
+    </section>
 
-    <!-- Curso 3 -->
-    <div class="curso-item">
+    <section class="section curso-item">
         <img src="imagenes/curso3.webp" alt="Imagen de curso 3" class="curso-image">
         <div class="curso-content">
             <h3>Desarrollo Profesional y Habilidades de Entrevista</h3>
             <p>Fortalece tus habilidades de presentación, aprende a crear un currículum efectivo y mejora tus técnicas de entrevista.</p>
             <a href="#" class="btn-learn-more">Más información</a>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
-<footer>
-    <p>&copy; 2024 Vinculación para Madres Autónomas. Todos los derechos reservados.</p>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Redes sociales -->
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <!-- Enlaces útiles -->
+        <div class="footer-section">
+            <h4>Enlaces</h4>
+            <ul class="footer-links horizontal-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="derechos.html">Derechos Laborales</a></li>
+                <li><a href="servicios.html">Servicios de Apoyo</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Vinculación para Madres Autónomas. Todos los derechos reservados.</p>
+    </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".section, .curso-item");
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Detener observación una vez activada
+                }
+            });
+        }, { threshold: 0.1 });
+
+        elements.forEach(element => observer.observe(element));
+    });
+</script>
 
 </body>
 </html>
