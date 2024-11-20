@@ -1187,19 +1187,54 @@ html {
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permitir reorganización */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Redes sociales */
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--morado-claro);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+}
+
 /* Enlaces útiles */
 .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap; /* Para reorganizar en filas múltiples */
-    justify-content: center; /* Centrar enlaces */
-    gap: 15px; /* Espaciado entre enlaces */
+    flex-wrap: wrap; /* Hacer que los enlaces ocupen varias filas */
+    gap: 10px;
+    justify-content: space-evenly; /* Distribuir uniformemente */
 }
 
 .footer-links li {
-    display: inline-block;
+    width: calc(50% - 10px); /* Cada enlace ocupa el 50% menos el gap */
+    text-align: left; /* Alinear texto a la izquierda */
 }
 
 .footer-links li a {
@@ -1226,17 +1261,11 @@ html {
 
 /* Responsivo para móviles */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; /* Cambiar a diseño vertical */
-        text-align: center;
-    }
-
     .footer-links {
-        flex-direction: column; /* Enlaces en una sola columna */
-        align-items: center; /* Centrar enlaces verticalmente */
+        justify-content: space-evenly; /* Mantener columnas en móviles */
     }
 
     .footer-links li {
-        margin-bottom: 10px; /* Espaciado adicional para cada enlace */
+        width: 50%; /* Cada columna ocupa el 50% */
     }
 }
