@@ -639,3 +639,516 @@ form {
     font-size: 2.5em; /* Ajusta el tamaño del texto para destacar el título */
 }
 
+/* Botón de registro */
+.btn-registro {
+    display: inline-block;
+    background: linear-gradient(90deg, #7E57C2, #673AB7); /* Tonos morados */
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Efecto hover */
+.btn-registro:hover {
+    background: linear-gradient(90deg, #673AB7, #7E57C2); /* Invertir gradiente */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto active */
+.btn-registro:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Centrar el botón en su contenedor */
+.register-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(103, 58, 183, 0.8), rgba(103, 58, 183, 0.6)), url('imagenes/hero-bg.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: linear-gradient(90deg, #6A1B9A, #800080); /* Nuevo morado */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-hero:hover {
+    background: linear-gradient(90deg, #800080, #6A1B9A); /* Invertir gradiente */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+}
+
+/* Secciones */
+.section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Alternar colores de fondo */
+.section:nth-child(even) {
+    background-color: #f9f9f9; /* Gris claro */
+}
+
+.section:nth-child(odd) {
+    background-color: #ffffff; /* Blanco */
+}
+
+/* Subtítulos */
+h2, h3 {
+    color: #800080; /* Morado de los subtítulos */
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Imágenes */
+.icon-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100px;
+}
+
+.icon-small {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+.values-list, .goals-list {
+    margin: 10px 20px;
+    padding-left: 20px;
+}
+
+.values-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.value-item {
+    max-width: 250px;
+}
+
+/* Botón de registro */
+.btn-registro {
+    display: inline-block;
+    background: linear-gradient(90deg, #6A1B9A, #800080); /* Nuevo morado */
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.btn-registro:hover {
+    background: linear-gradient(90deg, #800080, #6A1B9A); /* Invertir gradiente */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-registro:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Llamado al registro */
+.call-to-action {
+    background-color: #EEF2F7;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #6A1B9A; /* Nuevo morado */
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-subscribe button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #800080;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-subscribe button:hover {
+    background-color: #800080;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h3, p, img, .btn-registro {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: both;
+}
+
+/* Navegación */
+nav {
+    background-color: #6A1B9A; /* Morado de los subtítulos */
+    overflow: hidden;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #4A148C; /* Morado más oscuro */
+}
+
+/* Animaciones generales */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animaciones únicas a cada sección */
+.section:nth-child(1) {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.section:nth-child(2) {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.section:nth-child(3) {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.section:nth-child(4) {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.section:nth-child(5) {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.section:nth-child(6) {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.section:nth-child(7) {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.call-to-action {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Mantener la visibilidad tras la animación */
+.section, .call-to-action {
+    animation-fill-mode: both;
+}
+/* Estado inicial: oculto */
+.section, .call-to-action {
+    opacity: 0;
+    transform: translateY(50px); /* Mover hacia abajo */
+    transition: all 0.8s ease-out;
+}
+
+/* Cuando la sección está visible */
+.section.visible, .call-to-action.visible {
+    opacity: 1;
+    transform: translateY(0); /* Retornar a su posición original */
+}
+
+/* Para animaciones únicas (opcional) */
+.section:nth-child(odd).visible {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.section:nth-child(even).visible {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.call-to-action.visible {
+    animation: fadeInUp 1s ease-in-out;
+}
+/* Estado inicial de los elementos */
+.service, .contact-service {
+    opacity: 0;
+    transform: translateY(50px); /* Inicio fuera de la vista */
+    transition: all 0.8s ease-out;
+}
+
+/* Cuando los elementos son visibles */
+.service.visible, .contact-service.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation-fill-mode: forwards;
+}
+
+/* Animación personalizada para los servicios */
+.service:nth-child(1).visible {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.service:nth-child(2).visible {
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.service:nth-child(3).visible {
+    animation: fadeInUp 1.4s ease-in-out;
+}
+
+.service:nth-child(4).visible {
+    animation: fadeInUp 1.6s ease-in-out;
+}
+
+.contact-service.visible {
+    animation: fadeInUp 1.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sección de inicio con imagen de fondo */
+.hero-section {
+    background-image: url('imagenes/banner_inicio.webp'); /* Cambia la ruta a la imagen deseada */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Altura completa de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Asegura que el texto sea visible */
+    text-align: center;
+    position: relative;
+}
+
+/* Oscurecer fondo para resaltar texto */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre el fondo */
+}
+
+/* Botón en la sección de inicio */
+.btn-hero {
+    background-color: #6A1B9A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #4A148C;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enlaces útiles en el footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los enlaces */
+}
+
+.footer-links.horizontal-links li {
+    display: inline-block;
+}
+
+.footer-links.horizontal-links li a {
+    color: var(--morado-claro);
+    text-decoration: underline; /* Subrayado */
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-links.horizontal-links li a:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
