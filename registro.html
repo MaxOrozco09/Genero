@@ -27,6 +27,10 @@
 <section class="section">
     <h2>Registro de Candidatas</h2>
     <p>Sube tus datos y CV para que podamos contactarte con ofertas que se ajusten a tus necesidades.</p>
+</section>
+
+<!-- Formulario con animaciones -->
+<section class="section form-container">
     <form action="#" method="post" enctype="multipart/form-data">
         <div class="form-field">
             <label for="nombre">Nombre:</label>
@@ -52,9 +56,55 @@
     </form>
 </section>
 
-<footer>
-    <p>&copy; 2024 Vinculación para Madres Autónomas. Todos los derechos reservados.</p>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Redes sociales -->
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <!-- Enlaces útiles -->
+        <div class="footer-section">
+            <h4>Enlaces</h4>
+            <ul class="footer-links horizontal-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="derechos.html">Derechos Laborales</a></li>
+                <li><a href="servicios.html">Servicios de Apoyo</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Vinculación para Madres Autónomas. Todos los derechos reservados.</p>
+    </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".section, .form-field, .btn-submit");
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Detener observación una vez activada
+                }
+            });
+        }, { threshold: 0.1 });
+
+        elements.forEach(element => observer.observe(element));
+    });
+</script>
 
 </body>
 </html>
