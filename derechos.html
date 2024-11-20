@@ -27,41 +27,90 @@
 <section class="section">
     <h2>Tus derechos como trabajadora</h2>
     <p>Es fundamental que conozcas tus derechos laborales para garantizar un entorno de trabajo justo, seguro y saludable. Estos derechos están diseñados para protegerte y brindarte apoyo, tanto en el ámbito profesional como en el personal. Aquí te compartimos algunos derechos clave que deberías conocer:</p>
-    
-    <div class="right-section">
+</section>
+
+<!-- Contenedor para los bloques de derechos -->
+<div class="rights-container">
+    <section class="section right-section">
         <h3>Derecho a la igualdad de oportunidades</h3>
         <img src="imagenes/derecho_igualdad.webp" alt="Igualdad de oportunidades" class="section-image">
         <p>Las trabajadoras tienen derecho a un trato justo e igualitario, sin discriminación por género, estado civil, orientación sexual, raza o situación familiar. La igualdad de oportunidades incluye el derecho a recibir la misma compensación, acceso a oportunidades de crecimiento, y un trato respetuoso y digno. Conocer y exigir este derecho ayuda a construir un ambiente laboral inclusivo y equitativo para todas.</p>
-    </div>
+    </section>
 
-    <div class="right-section">
+    <section class="section right-section">
         <h3>Derecho a permisos de maternidad</h3>
         <img src="imagenes/derecho_maternidad.webp" alt="Permisos de maternidad" class="section-image">
         <p>El permiso de maternidad es un derecho fundamental que permite a las madres tomarse un tiempo remunerado para cuidar a sus hijas e hijos recién nacidos, sin temor a perder su empleo. Esto incluye la seguridad de regresar a su puesto de trabajo tras la licencia y el derecho a solicitar adaptaciones, como la reducción de jornada. Infórmate sobre la duración y los requisitos específicos en tu país para aprovechar al máximo este derecho.</p>
-    </div>
+    </section>
 
-    <div class="right-section">
+    <section class="section right-section">
         <h3>Derecho a un ambiente de trabajo seguro</h3>
         <img src="imagenes/derecho_seguridad.webp" alt="Ambiente de trabajo seguro" class="section-image">
         <p>Todas las trabajadoras tienen derecho a un lugar de trabajo que proteja su salud física y mental. Esto incluye medidas de seguridad adecuadas, como equipos de protección, pausas regulares, y un entorno libre de acoso y violencia. Además, tienes derecho a recibir capacitación sobre seguridad laboral y acceso a recursos de salud mental, creando así un entorno laboral que priorice tu bienestar.</p>
-    </div>
+    </section>
 
-    <div class="right-section">
+    <section class="section right-section">
         <h3>Derecho a prestaciones y beneficios</h3>
         <img src="imagenes/derecho_prestaciones.webp" alt="Prestaciones y beneficios" class="section-image">
         <p>Además del salario, tienes derecho a recibir beneficios que contribuyan a tu calidad de vida y la de tu familia. Estos pueden incluir seguro médico, vacaciones pagadas, fondos de retiro y otros incentivos específicos. Conocer estos beneficios te permite planificar mejor tus finanzas y obtener el respaldo necesario para situaciones imprevistas, como enfermedades o emergencias familiares.</p>
-    </div>
+    </section>
 
-    <div class="right-section">
+    <section class="section right-section">
         <h3>Derecho a horarios flexibles</h3>
         <img src="imagenes/derecho_horarios.webp" alt="Horarios flexibles" class="section-image">
         <p>El derecho a solicitar horarios de trabajo flexibles o adaptados a tus necesidades es esencial, especialmente para madres solteras. Este derecho te permite negociar jornadas que se ajusten a tus responsabilidades familiares, como llevar a tus hijas e hijos a la escuela o estar presente en eventos importantes. Consulta las políticas de tu empresa y asegúrate de saber cómo solicitar un horario flexible para equilibrar mejor tu vida personal y laboral.</p>
-    </div>
-</section>
+    </section>
+</div>
 
-<footer>
-    <p>&copy; 2024 Vinculación para Madres Autónomas. Todos los derechos reservados.</p>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Redes sociales -->
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="imagenes/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="imagenes/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <!-- Enlaces útiles -->
+        <div class="footer-section">
+            <h4>Enlaces</h4>
+            <ul class="footer-links horizontal-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="derechos.html">Derechos Laborales</a></li>
+                <li><a href="servicios.html">Servicios de Apoyo</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Vinculación para Madres Autónomas. Todos los derechos reservados.</p>
+    </div>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".section, .right-section");
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Dejar de observar después de activar
+                }
+            });
+        }, { threshold: 0.1 });
+
+        elements.forEach(element => observer.observe(element));
+    });
+</script>
 
 </body>
 </html>
